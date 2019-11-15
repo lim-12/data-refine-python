@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="{{url_for('static', filename='js/script.js')}}" type="text/javascript"></script>
+    <body>
+        <p>URL <input type="text" id="url" /></p>
+        <p>Type <select name="type" id="type">
+            <option value="remove_tag">
+                HTML 태그 제외
+            </option>
+            <option value="all">
+                Txt 전체
+            </option>
+        </select></p>
+        <p>출력묶음단위(자연수) <input type="text" id="bundle_unit" /></p>
+        <p><input type="button" id="output" value="출력" /></p>
+        <p>몫</p> <p id="quotient"></p>
+        <p>나머지</p><p id="remainder"></p>
+    </body>
+</html>
